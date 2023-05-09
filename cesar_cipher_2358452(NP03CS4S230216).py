@@ -42,7 +42,7 @@ def encrypt(message, shift):
             #Ascii value of uppercase alphabets starts from 65, so substracting 65 to start the values from 0 and getting the modulus to get remainder ranging from 0-25
         else:
             result += char  #Equivalent to result = result + char
-
+                                                                            
     return result  #Returns the result
 
 #Defining decrypt() function
@@ -141,7 +141,6 @@ def main():  #main function
             messages = process_file(filename, mode)
             write_message(messages)
             print("Messages written to results.txt")
-        
         while True:
             again = input("Would you like to encrypt or decrypt another message? (y/n): ") #ask user for yes or no to continue program
             if again != "y" and again != "n":  #if user is not equal to "y" or "n" loop continues
